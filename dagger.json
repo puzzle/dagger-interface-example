@@ -1,0 +1,18 @@
+{
+  "name": "Usage",
+  "engineVersion": "v0.18.5",
+  "sdk": {
+    "source": "go"
+  },
+  "source": "usage",
+  "dependencies": [
+    {
+      "name": "Example",
+      "source": "./usage/implementation"
+    },
+    {
+      "name": "MyModule",
+      "source": "./usage/interface"
+    }
+  ]
+}
