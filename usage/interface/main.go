@@ -2,12 +2,13 @@ package main
 
 import (
 	"context"
+	"dagger/my-module/internal/dagger"
 )
 
 type MyModule struct{}
 
 type Fooer interface {
-	DaggerObject
+	dagger.DaggerObject
 	Foo(ctx context.Context, bar int) (string, error)
 	HasBar(ctx context.Context) (bool, error)
 	Lint(dir *dagger.Directory, pass bool) *dagger.Directory
