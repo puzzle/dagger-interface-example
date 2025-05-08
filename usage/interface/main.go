@@ -10,12 +10,7 @@ type Fooer interface {
 	DaggerObject
 	Foo(ctx context.Context, bar int) (string, error)
 	HasBar(ctx context.Context) (bool, error)
-	Lint(
-		dir *dagger.Directory,
-		//+optional
-		//+default=false
-		pass bool,
-	) *dagger.Directory
+	Lint(dir *dagger.Directory, pass bool) *dagger.Directory
 }
 
 func (m *MyModule) Foo(ctx context.Context, fooer Fooer) (string, error) {

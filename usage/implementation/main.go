@@ -16,12 +16,7 @@ func (m *Example) HasBar() (bool, error) {
 	return false, nil
 }
 
-func (m *Example) Lint(
-	dir *dagger.Directory,
-	//+optional
-	//+default=false
-	pass bool,
-) *dagger.Directory {
+func (m *Example) Lint(dir *dagger.Directory, pass bool) *dagger.Directory {
 	var anotherDir *dagger.Directory
 	return anotherDir
 }
