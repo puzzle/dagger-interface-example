@@ -8,7 +8,7 @@ import (
 type MyModule struct{}
 
 type Fooer interface {
-	dagger.DaggerObject
+	DaggerObject
 	Foo(ctx context.Context, bar int) (string, error)
 	HasBar(ctx context.Context) (bool, error)
 	Lint(dir *dagger.Directory, pass bool) *dagger.Directory
