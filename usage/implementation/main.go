@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-    "dagger/example/internal/dagger"
+	"dagger/example/internal/dagger"
 	"fmt"
 )
 

@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"dagger/usage/internal/dagger"
 )
 
 type Usage struct{}
